@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.roboto-mono{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    font-size:18px;
+    font-family: "Raleway", sans-serif;
+    font-weight:500;
+    color:#f9f7f0;
+}
+
+body{
+    height:100vh;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background:linear-gradient(to right, #072A40, #126DA6);
+}
+
+.circleButton{
+    padding:15px 30px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+}
+
+.whiteButton{
+    color:#072A40;
+    background:#f9f7f0;
+}
+
+.blueButton{
+    color:#f9f7f0;
+    background:linear-gradient(to right, #072A40, #126DA6);
+}
+
+button{
+    transition:all .2s linear;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    background:linear-gradient(to left, #072A40, #126DA6);
+    padding:15px;
+    z-index:999;
+}
+
+header .circleButton{
+    padding:10px 25px;
+}
+
+.headerContent{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:70vw;
+}
+
+.menuAndBtn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.headerMenu{
+    display:flex;
+    gap:10px;
+}
+
+.headerMenu .menuItem{
+    cursor:pointer;
+    opacity:0.8;
+}
+
+.headerMenu .menuItem:hover{
+    opacity:1;
+}
+
+/* main --------------------------------------------- */
+
+main{
+    width:100%;
+    margin-top:171px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:60px;
+}
+
+.header1{
+    font-size:36px;
+}
+
+.header2{
+    font-size:30px;
+}
+
+.paragraph{
+    font-size:18px;
+    max-width:500px;
+    opacity:0.8;
+}
+
+.leftSide, .rightSide{
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    gap:20px;
+}
+
+section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+}
+
+#screenshots{
+    flex-direction:row;
+    align-items:end;
+}
+
+#mobileScreenshot{
+    margin-right:-80px;
+    margin-bottom:-20px;
+    z-index:1;
+}
+
+#websitePlusMarketing .header1{
+    border-bottom:1px solid #f9f7f0;
+    padding-bottom:10px;
+}
+
+.whiteSection{
+    background:#f9f7f0;
+    width:100%;
+    padding:30px;
+}
+
+.sectionContent{
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    gap:40px;
+}
+
+.whiteSection div, .whiteSection label, .whiteSection input, .whiteSection textarea{
+    color:#072A40;
+}
+
+.opportunities{
+    display:flex;
+    gap:20px;
+}
+
+.opportunity{
+    border-top:1px solid #072A40;
+    display:flex;
+    flex-direction:column;
+    padding-top:10px;
+    gap:10px;
+}
+
+.opportunity .paragraph{
+    max-width:300px;
+}
+
+#featuresSection{
+    flex-direction:column;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:auto auto auto;
+    gap:40px;
+}
+
+.feature{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.feature .paragraph{
+    max-width:300px;
+}
+
+.typeOfWebsites{
+    display:grid;
+    grid-template-columns:auto auto;
+    gap:40px;
+}
+
+.card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:360px;
+    padding:30px;
+    gap:10px;
+    border-radius:20px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition:all .2s linear;
+}
+
+.card:hover{
+    box-shadow:0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.card .paragraph{
+    max-width:100%;
+}
+
+form{
+    width:480px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.labelAndInput{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.namePart{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.namePart .labelAndInput{
+    width:48%;
+}
+
+input, textarea{
+    padding:10px;
+    border-radius:10px;
+    border:1px solid rgba(0, 0, 0, 0.3);
+}
+
+input:focus, textarea:focus{
+    outline:none;
+    border:1px solid rgba(0, 0, 0, 0.6);
+}
+
+textarea{
+    resize:none;
+}
+
+.submitBtn{
+    padding:10px;
+    border-radius:10px;
+    background:linear-gradient(to right, #072A40, #126DA6);
+    border:none;
+    cursor:pointer;
+}
+
+.verticalLine{
+    height:80%;
+    width:1px;
+    background:#f9f7f0;
+}
+
+#faqSection{
+    flex-direction:column;
+}
+
+.faqs{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.faq{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+    border-radius:20px;
+    width:600px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor:pointer;
+    transition:all .2s linear;
+}
+
+.question{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.faq:hover{
+    box-shadow:0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes rotatePlusAn1{
+    from {transform:rotate(45deg);}
+    to {transform:rotate(0deg);}
+}
+
+.plusSign{
+    width:25px;
+    height:25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    animation:rotatePlusAn1 .2s ease-in-out;
+}
+
+@keyframes rotatePlusAn2{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(45deg);}
+}
+
+#rotatedPlus{
+    transform:rotate(45deg);
+    animation:rotatePlusAn2 .2s ease-in-out;
+}
+
+.plusSign .vl{
+    position:absolute;
+    background:#f9f7f0;
+    width:2px;
+    height:25px;
+}
+
+.plusSign .hl{
+    position:absolute;
+    background:#f9f7f0;
+    height:2px;
+    width:25px;
+}
+
+@keyframes popUpAnswer{
+    from {height:0;}
+    to {height:auto;}
+}
+
+.answer{
+    display:none;
+}
+
+.answer .paragraph{
+    max-width:100%;
+}
+
+footer{
+    margin-top:60px;
+    display:flex;
+    justify-content:center;
+}
+
+.newsLetterPart{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+.newsLetter{
+    width:600px;
+    border-radius:20px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.7);
+    flex-direction:row;
+    gap:0;
+}
+
+.newsLetter input{
+    width:inherit;
+    border:none;
+    border-radius:20px 0 0 20px;
+    padding:20px;
+}
+
+.newsLetter button{
+    padding:20px 30px;
+    border:none;
+    background:linear-gradient(to right, #072A40, #126DA6);
+    border-radius:0 20px 20px 0;
+    cursor:pointer;
+}
+
+.menuIcon{
+    display:none;
+    flex-direction:column;
+    gap:8px;
+    cursor:pointer;
+    align-items:center;
+    justify-content:center;
+    width:40px;
+    height:25px;
+}
+
+.menuIcon .hl{
+    border-radius:50px;
+    width:40px;
+    height:3px;
+    background:#f9f7f0;
+}
+
+@keyframes rotateLine1{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(45deg);}
+}
+
+@keyframes rotateLine2{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(-45deg);}
+}
+
+#crossMenuIcon{
+    width:35px;
+    height:35px;
+}
+
+#crossMenuIcon #line3{
+    display:none;
+}
+
+#crossMenuIcon #line1{
+    transform:rotate(45deg);
+    position:absolute;
+    /* animation:rotateLine1 .2s ease-in-out; */
+}
+
+#crossMenuIcon #line2{
+    position:absolute;
+    transform:rotate(-45deg);
+    /* animation:rotateLine2 .2s ease-in-out; */
+}
+
+@keyframes menuSlideDown{
+    from {transform:translateY(-100vh);}
+    to {transform:translateY(0);}
+}
+
+#mobileHeader{
+    height:100%;
+    animation:menuSlideDown .4s;
+}
+
+#mobileHeader .headerContent{
+    flex-direction:column;
+    justify-content:center;
+}
+
+#mobileHeader .headerContent .menuAndBtn .circleButton{
+    display:none;
+}
+
+#mobileHeader img{
+    display:none;
+}
+
+#mobileHeader .menuAndBtn{
+    flex-direction:column;
+    gap:20px;
+}
+
+#mobileHeader .headerMenu{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#mobileHeader .headerMenu .menuItem{
+    font-size:30px;
+}
+
+/* Smaller Layout */
+
+@media only screen and (max-width:1110px){
+    #mainSection{
+        flex-direction:column;
+    }
+}
+
+@media only screen and (max-width:1005px){
+    .features{
+        grid-template-columns:auto auto;
+    }
+}
+
+@media only screen and (max-width:665px){
+    .features{
+        grid-template-columns:auto;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .typeOfWebsites{
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (max-width:740px){
+    #whyUsSection{
+        flex-direction:column;
+    }
+    .verticalLine{
+        display:none;
+    }
+}
+
+@media only screen and (max-width:940px){
+    .headerContent{
+        width:inherit;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .headerContent{
+        flex-direction: column;
+        gap:20px;
+    }
+    #faqSection{
+        width:100%;
+        padding-right:20px;
+        padding-left:20px;
+    }
+    .faqs{
+        width:100%;
+    }
+    .faq{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:635px){
+    .newsLetter{
+        width:80vw;
+    }
+}
+
+@media only screen and (max-width:590px){
+    .opportunities{
+        flex-direction:column;
+    }
+    #opportunitiesSection .sectionContent{
+        align-items:center;
+    }
+}
+
+@media only screen and (max-width:570px){
+    #mainPic{
+        width:80vw;
+    }
+}
+
+/* Mobile */
+
+@media only screen and (max-width:560px){
+    /* .headerContent .circleButton{
+        display:none;
+    } */
+    main{
+        margin-top:150px;
+    }
+    section, .whiteSection{
+        padding-right:20px;
+        padding-left:20px;
+    }
+    .namePart{
+        flex-direction:column;
+        gap:20px;
+    }
+    .namePart .labelAndInput{
+        width:100%;
+    }
+    .card{
+        width:100%;
+        max-width:360px;
+    }
+    .newsLetter{
+        flex-direction:column;
+        gap:20px;
+        width:calc(100vw - 40px);
+        box-shadow:none;
+    }
+    .newsLetter input{
+        width:100%;
+        border-radius:20px;
+        box-shadow:0 0 10px rgba(0, 0, 0, 0.7);
+    }
+    .newsLetter button{
+        border-radius:20px;
+        box-shadow:0 0 10px rgba(0, 0, 0, 0.7);
+    }
+    .question .header2{
+        font-size:18px;
+    }
+    #websitePlusMarketing .header1{
+        max-width:fit-content;
+        text-align:center;
+    }
+    .headerContent{
+        flex-direction:row;
+    }
+    .headerMenu{
+        display:none;
+    }
+    .menuIcon{
+        display:flex;
+    }
+}
