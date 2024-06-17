@@ -124,6 +124,11 @@ main{
     gap:20px;
 }
 
+section, footer{
+    padding-left:20px;
+    padding-right:20px;
+}
+
 section{
     display:flex;
     align-items:center;
@@ -497,31 +502,31 @@ footer{
 
 /* Smaller Layout */
 
-@media only screen and (max-width:1110px){
+@media only screen and (max-width:1150px){
     #mainSection{
         flex-direction:column;
     }
 }
 
-@media only screen and (max-width:1005px){
+@media only screen and (max-width:1045px){
     .features{
         grid-template-columns:auto auto;
     }
 }
 
-@media only screen and (max-width:665px){
+@media only screen and (max-width:705px){
     .features{
         grid-template-columns:auto;
     }
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:940px){
     .typeOfWebsites{
         grid-template-columns: auto;
     }
 }
 
-@media only screen and (max-width:740px){
+@media only screen and (max-width:780px){
     #whyUsSection{
         flex-direction:column;
     }
@@ -536,15 +541,13 @@ footer{
     }
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:740px){
     .headerContent{
         flex-direction: column;
         gap:20px;
     }
     #faqSection{
         width:100%;
-        padding-right:20px;
-        padding-left:20px;
     }
     .faqs{
         width:100%;
@@ -569,7 +572,7 @@ footer{
     }
 }
 
-@media only screen and (max-width:570px){
+@media only screen and (max-width:610px){
     #mainPic{
         width:80vw;
     }
@@ -584,9 +587,9 @@ footer{
     main{
         margin-top:150px;
     }
-    section, .whiteSection{
-        padding-right:20px;
-        padding-left:20px;
+    #mainSection .leftSide .circleButton{
+        margin-left:auto;
+        margin-right:auto;
     }
     .namePart{
         flex-direction:column;
