@@ -56,7 +56,9 @@ header{
     width:100%;
     display:flex;
     justify-content:center;
-    background:linear-gradient(to left, #072A40, #126DA6);
+    /* background:linear-gradient(to left, #072A40, #126DA6); */
+    background:#126da6a0;
+    backdrop-filter:blur(10px);
     padding:15px;
     z-index:999;
 }
@@ -80,7 +82,7 @@ header .circleButton{
 
 .headerMenu{
     display:flex;
-    gap:10px;
+    gap:16px;
 }
 
 .headerMenu .menuItem{
@@ -227,6 +229,10 @@ section{
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition:all .2s linear;
+}
+
+.card i{
+    font-size:50px;
 }
 
 .card:hover{
@@ -381,7 +387,15 @@ textarea{
 footer{
     margin-top:60px;
     display:flex;
+    align-items:center;
+    flex-direction:column;
+    gap:40px;
     justify-content:center;
+}
+
+footer p{
+    color:#072A40;
+    margin:0;
 }
 
 .newsLetterPart{
@@ -536,7 +550,7 @@ footer{
     }
 }
 
-@media only screen and (max-width:940px){
+@media only screen and (max-width:990px){
     .headerContent{
         width:inherit;
     }
@@ -585,9 +599,6 @@ footer{
     /* .headerContent .circleButton{
         display:none;
     } */
-    main{
-        margin-top:150px;
-    }
     #mainSection .leftSide .circleButton{
         margin-left:auto;
         margin-right:auto;
@@ -625,6 +636,9 @@ footer{
         max-width:fit-content;
         text-align:center;
     }
+}
+
+@media only screen and (max-width:600px){
     .headerContent{
         flex-direction:row;
     }
@@ -633,5 +647,8 @@ footer{
     }
     .menuIcon{
         display:flex;
+    }
+    main{
+        margin-top:150px;
     }
 }

@@ -4,7 +4,8 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uprize</title>
+    <title>Uprize Solutions</title>
+    <script src="https://kit.fontawesome.com/96e370b9f1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -34,12 +35,7 @@
                     Get your business online now!
                 </div>
                 <div class="paragraph">
-                    The internet is everywhere. If your business
-                    is not on the internet then you are missing out.
-                    We will design and build your business a website
-                    as well as take care of the marketing on the website.
-                    This is your chance, don’t miss out!
-                </div>
+                    If your business isn’t online, you’re missing out. We’ll build your website and handle marketing—so you can reach more customers.                </div>
                 <button class="circleButton whiteButton">Get in contact</button>
             </div>
             <div class="rightSide" id="screenshots">
@@ -75,71 +71,79 @@
             <div class="header1">Guaranteed growth!</div>
             <div class="features">
                 <div class="feature">
-                    <div class="header2">Faster load time</div>
-                    <div class="paragraph">A website built with its efficiency in mind.</div>
+                    <div class="header2">Lightning-Fast Websites</div>
+                    <div class="paragraph">Built to load instantly and keep your visitors engaged.</div>
                 </div>
                 <div class="feature">
-                    <div class="header2">Up-to-date managing</div>
-                    <div class="paragraph">Our team will manage your website daily.</div>
+                    <div class="header2">Always Up-to-Date</div>
+                    <div class="paragraph">We handle updates and maintenance so you don’t have to.</div>
                 </div>
                 <div class="feature">
-                    <div class="header2">Optimised marketing</div>
-                    <div class="paragraph">The marketing on the website will be optimised as much as possible.</div>
+                    <div class="header2">Marketing That Works</div>
+                    <div class="paragraph">Your site will attract the right audience, effortlessly.</div>
                 </div>
                 <div class="feature">
-                    <div class="header2">Beautiful design</div>
-                    <div class="paragraph">You'll love the design of the website.</div>
+                    <div class="header2">Stunning Designs</div>
+                    <div class="paragraph">Websites that look professional and memorable.</div>
                 </div>
                 <div class="feature">
-                    <div class="header2">Affordable pricing</div>
-                    <div class="paragraph">It won't cost you much to get a website.</div>
+                    <div class="header2">Flexible & Affordable</div>
+                    <div class="paragraph">Custom websites without the hefty price tag.</div>
+                </div>
+                <div class="feature">
+                    <div class="header2">On-Demand Support</div>
+                    <div class="paragraph">We’re here whenever you need changes or improvements.</div>
                 </div>
             </div>
             <button class="circleButton whiteButton">Get Started</button>
             <div class="typeOfWebsites">
                 <div class="card">
-                    <img src="shopping2.png" height="70">
+                    <!-- <img src="shopping2.png" height="70"> -->
+                    <i class="fa-solid fa-business-time"></i>
+                    <div class="header2">Business Website</div>
+                    <div class="paragraph">A professional online presence to showcase your company and services.</div>
+                </div>
+                <div class="card">
+                    <!-- <img src="blog2.png" height="70"> -->
+                    <i class="fa-solid fa-cart-shopping"></i>
                     <div class="header2">E-Commerce</div>
-                    <div class="paragraph">We will build you an e-commerce website for selling products.</div>
+                    <div class="paragraph">A secure online store to sell your products anytime, anywhere.</div>
                 </div>
                 <div class="card">
-                    <img src="blog2.png" height="70">
-                    <div class="header2">Blog</div>
-                    <div class="paragraph">We will build you a blog website where you can grow your audience.</div>
-                </div>
-                <div class="card">
-                    <img src="calendar2.png" height="70">
-                    <div class="header2">Scheduling software</div>
-                    <div class="paragraph">Offer your services and let your clients be able to book you on the spot.</div>
-                </div>
-                <div class="card">
-                    <img src="portfolio2.png" height="70">
+                    <!-- <img src="calendar2.png" height="70"> -->
+                    <i class="fa-solid fa-briefcase"></i>
                     <div class="header2">Portfolio</div>
-                    <div class="paragraph">We will build your portfolio so you can attract more customers with your work.</div>
+                    <div class="paragraph">Highlight your work and impress potential clients with a stunning showcase.</div>
+                </div>
+                <div class="card">
+                    <!-- <img src="portfolio2.png" height="70"> -->
+                    <i class="fa-solid fa-file-pen"></i>
+                    <div class="header2">Blog</div>
+                    <div class="paragraph">Share your ideas, stories, or expertise and grow a loyal audience.</div>
                 </div>
             </div>
         </section>
         <section class="whiteSection">
-            <form id="contactForm" action="" method="post">
+            <form id="contactForm" action="https://formspree.io/f/mvgdenqe" method="POST">
                 <div class="header1">Contact</div>
                 <div class="paragraph">Be descriptive on what you want.</div>
                 <div class="namePart">
                     <div class="labelAndInput">
                         <label for="firstname">First name</label>
-                        <input id="firstname" type="text" placeholder="Jane">
+                        <input name="firstname" id="firstname" type="text" placeholder="Jane" required>
                     </div>
                     <div class="labelAndInput">
                         <label for="lastname">Last name</label>
-                        <input id="lastname" type="text" placeholder="Smith">
+                        <input name="lastname" id="lastname" type="text" placeholder="Smith" required>
                     </div>
                 </div>
                 <div class="labelAndInput">
                     <label for="email">Email address</label>
-                    <input id="email" type="email" placeholder="youremail@gmail.com">
+                    <input name="email" id="email" type="email" placeholder="youremail@gmail.com" required>
                 </div>
                 <div class="labelAndInput">
                     <label for="textarea">Your message</label>
-                    <textarea rows="6" id="textarea" placeholder="Type your message here..."></textarea>
+                    <textarea name="text" rows="6" id="textarea" placeholder="Type your message here..." required></textarea>
                 </div>
                 <button class="submitBtn" type="submit">Submit</button>
             </form>
@@ -148,13 +152,7 @@
             <div class="header1">Why us?</div>
             <div class="verticalLine"></div>
             <div class="paragraph">
-                We are a team of professional web developers that have spent most of our time learning
-                to code and build websites as well as other kinds of software. We want to be the best in
-                our field, so we won’t disappoint you. We take good care of our customers and dedicate 
-                ourselves to make sure you are happy with your product. With us you will feel like you
-                are in good hands, because you are. Each and every single one of us has done so many
-                projects on our own that we are now able to build ANYTHING in no time.
-                Your success is our mission. So don’t waste time and contact us!
+                We are a team of skilled web developers, passionate about building websites and software that make a real impact. Our goal is simple: to deliver the best results for your business. We take pride in supporting our clients every step of the way, ensuring you’re happy with the final product. With years of experience and countless projects under our belt, we can create anything you need, quickly and efficiently. Your success is our mission—so don’t wait, get in touch and let’s bring your vision to life!
             </div>
         </section>
         <section id="faqSection">
@@ -170,7 +168,7 @@
                     </div>
                     <div class="answer">
                         <div class="paragraph">
-                            We will charge you 50% upfront and 50% when the project is complete.
+                            We require full payment upfront to get started on your project. This ensures your website is prioritized and delivered efficiently.
                         </div>
                     </div>
                 </div>
@@ -184,7 +182,7 @@
                     </div>
                     <div class="answer">
                         <div class="paragraph">
-                            It usually takes 1-2 weeks depending on the difficulty of the project.
+                            Most websites are ready within 2–4 weeks, while more complex web apps may take 4–8 weeks, depending on features and customization. We’ll give you a clear timeline before starting so you know exactly what to expect.
                         </div>
                     </div>
                 </div>
@@ -198,13 +196,13 @@
                     </div>
                     <div class="answer">
                         <div class="paragraph">
-                            You can pay us using paypal or crypto.
+                            Payments can be made securely via online bank transfer or credit/debit card.
                         </div>
                     </div>
                 </div>
                 <div class="faq">
                     <div class="question">
-                        <div class="header2">Do we have to do anything complicated?</div>
+                        <div class="header2">Do I need to handle anything complicated?</div>
                         <div class="plusSign">
                             <div class="hl"></div>
                             <div class="vl"></div>
@@ -212,7 +210,7 @@
                     </div>
                     <div class="answer">
                         <div class="paragraph">
-                            No. We do everything for you. From development to hosting your website.
+                            Not at all. We take care of everything—from building your website to hosting and maintenance—so you can focus on your business.
                         </div>
                     </div>
                 </div>
@@ -222,11 +220,12 @@
     <footer class="whiteSection">
         <div class="newsLetterPart">
             <div class="header1">Get updates with our newsletter!</div>
-            <form class="newsLetter" method="post">
-                <input type="email" placeholder="Enter your email address">
+            <form class="newsLetter" action="https://formspree.io/f/xblqneer" method="post">
+                <input name="email" type="email" placeholder="Enter your email address">
                 <button type="submit">Subscribe</button>
             </form>
         </div>
+        <p>© 2025 Uprize Solutions. All rights reserved.</p>
     </footer>
     <script src="index.js"></script>
 </body>
