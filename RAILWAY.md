@@ -58,3 +58,25 @@ and keep `railpack.json` to extensions only — no `packages.php`:
 ```
 
 `ext-pdo_mysql` is the MySQL driver install. It is not the same as `"packages": { "php": "8.4" }`.
+
+## Contact form hangs then 500 (SMTP timeout)
+
+**Symptom:** POST `/contact` dies with `Maximum execution time of 30 seconds exceeded` in `SocketStream.php`.
+
+**Cause:** Railway Hobby/Trial/Free **blocks outbound SMTP** (ports 25, 465, 587). Gmail app passwords use `smtp.gmail.com:587`, so the socket waits until PHP times out. SMTP is only allowed on Pro, and Gmail often still rejects datacenter IPs.
+
+**Fix:** send mail over HTTPS with [Resend](https://resend.com). Do not use Gmail SMTP on Railway.
+
+1. Create a Resend account and verify the domain `uprizesolutions.com`.
+2. Create an API key.
+3. On Railway set:
+
+```
+MAIL_MAILER=resend
+MAIL_FROM_ADDRESS=hello@uprizesolutions.com
+MAIL_FROM_NAME=Uprize Solutions
+MAIL_TO_ADDRESS=uprizesolutions@gmail.com
+RESEND_API_KEY=re_...
+```
+
+`MAIL_FROM_ADDRESS` must be an address on the verified domain. `MAIL_TO_ADDRESS` can still be Gmail. Local can stay `MAIL_MAILER=log`.
