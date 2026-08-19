@@ -1,9 +1,13 @@
 {
-  "$schema": "https://railpack.com/schema.json",
+  "$schema": "https://schema.railpack.com",
+  "packages": {
+    "php": "8.4"
+  },
   "php": {
     "extensions": [
       "intl",
-      "zip"
+      "zip",
+      "pdo_mysql"
     ]
   }
 }

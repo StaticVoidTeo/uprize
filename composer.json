@@ -11,6 +11,7 @@
         "laravel/framework": "^13.17",
         "laravel/tinker": "^3.0",
         "ext-intl": "*",
+        "ext-pdo_mysql": "*",
         "ext-zip": "*"
     },
     "require-dev": {
