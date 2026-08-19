@@ -1,0 +1,66 @@
+composer install --optimize-autoloader --no-scripts --no-interaction
+654ms
+Composer plugins have been disabled for safety in this non-interactive session.
+Set COMPOSER_ALLOW_SUPERUSER=1 if you want to allow plugins to run as root/super user.
+Do not run Composer as root/super user! See https://getcomposer.org/root for details
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. It is recommended that you run `composer update` or `composer update <package name>`.
+Your lock file does not contain a compatible set of packages. Please run composer update.
+
+  Problem 1
+    - symfony/clock is locked to version v8.1.0 and an update of this package was not requested.
+    - symfony/clock v8.1.0 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 2
+    - symfony/console is locked to version v8.1.4 and an update of this package was not requested.
+    - symfony/console v8.1.4 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 3
+    - symfony/css-selector is locked to version v8.1.0 and an update of this package was not requested.
+    - symfony/css-selector v8.1.0 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 4
+    - symfony/error-handler is locked to version v8.1.2 and an update of this package was not requested.
+    - symfony/error-handler v8.1.2 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 5
+    - symfony/event-dispatcher is locked to version v8.1.2 and an update of this package was not requested.
+    - symfony/event-dispatcher v8.1.2 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 6
+    - symfony/finder is locked to version v8.1.1 and an update of this package was not requested.
+    - symfony/finder v8.1.1 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 7
+    - symfony/html-sanitizer is locked to version v8.1.1 and an update of this package was not requested.
+    - symfony/html-sanitizer v8.1.1 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 8
+    - symfony/http-foundation is locked to version v8.1.4 and an update of this package was not requested.
+    - symfony/http-foundation v8.1.4 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 9
+    - symfony/http-kernel is locked to version v8.1.4 and an update of this package was not requested.
+    - symfony/http-kernel v8.1.4 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 10
+    - symfony/mailer is locked to version v8.1.2 and an update of this package was not requested.
+    - symfony/mailer v8.1.2 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 11
+    - symfony/mime is locked to version v8.1.4 and an update of this package was not requested.
+    - symfony/mime v8.1.4 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 12
+    - symfony/process is locked to version v8.1.0 and an update of this package was not requested.
+    - symfony/process v8.1.0 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 13
+    - symfony/routing is locked to version v8.1.2 and an update of this package was not requested.
+    - symfony/routing v8.1.2 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 14
+    - symfony/string is locked to version v8.1.2 and an update of this package was not requested.
+    - symfony/string v8.1.2 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 15
+    - symfony/translation is locked to version v8.1.4 and an update of this package was not requested.
+    - symfony/translation v8.1.4 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 16
+    - symfony/uid is locked to version v8.1.4 and an update of this package was not requested.
+    - symfony/uid v8.1.4 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 17
+    - symfony/var-dumper is locked to version v8.1.2 and an update of this package was not requested.
+    - symfony/var-dumper v8.1.2 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+  Problem 18
+    - nunomaduro/collision is locked to version v8.9.5 and an update of this package was not requested.
+    - nunomaduro/collision v8.9.5 requires symfony/console ^7.4.14 || ^8.1.1 -> satisfiable by symfony/console[v8.1.4].
+    - symfony/console v8.1.4 requires php >=8.4.1 -> your php version (8.3.33) does not satisfy that requirement.
+Build Failed: build daemon returned an error < failed to solve: process "composer install --optimize-autoloader --no-scripts --no-interaction" did not complete successfully: exit code: 2 >
